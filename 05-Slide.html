@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Estrutura Basica JQuery</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                //exibir
+                $(".ocultar").click(function(){
+                    $(".mensagem").slideUp();
+                });
+                
+                 $(".exibir").click(function(){
+                    $(".mensagem").slideDown();
+                });
+              
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+        <h1 class="exibir">Exibir</h1>
+        <h1 class="ocultar">Ocultar</h1>
+        <hr>
+        <h1 class="mensagem">Olá Mundo</h1>
+        
+        
+        
+       
+    </body>
+
+</html>

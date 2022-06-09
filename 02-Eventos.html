@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Eventos JQuery</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                var quantifade = 1;
+                //Evento de click
+                $("button").click(function(){
+                     $("h1").html(quantifade++);
+                });
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+        <h1></h1>
+        <button>Click Aqui</button>
+       
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Estrutura Basica JQuery</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                //exibir
+                $("#ocultar").click(function(){
+                    $("img").hide();
+                    
+                });
+                
+                 $("#exibir").click(function(){
+                    $("img").show();
+                    $("img").attr("width","500px");
+                });
+              
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+        <button id ="exibir">exibir</button>
+        <button id="ocultar">ocultar</button><br/>
+        <hr>
+        <img src="baixados.jpg" width="100px"/><br/>
+        
+        
+        
+       
+    </body>
+
+</html>

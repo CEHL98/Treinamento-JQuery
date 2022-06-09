@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Estrutura Basica JQuery</title>
+        
+        <style>
+        
+            div{
+                width: 100px;
+                height: 80px;
+                background-color: green;
+            }
+            
+            #azul{
+                
+                width: 100px;
+                height: 80px;
+                background-color: blue;
+            }
+            
+            #vermelho{
+                width: 100px;
+                height: 80px;
+                background-color: red;
+            }
+            
+            
+        </style>
+        
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                //exibir
+                $("#botao").click(function(){
+                    $("#verde").animate({
+                        width: "200px"
+                    });
+                    
+                     $("#vermelho").animate({
+                        width: "400px"
+                    });
+                    
+                     $("#azul").animate({
+                         width:"300px"
+                        
+                    });
+                    
+                    
+                });
+                
+              
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+        <button id ="botao">click aqui</button>
+        <div id ="verde"> </div><br/>
+            <div id="vermelho"> </div><br/>
+            <div id="azul"> </div>
+        
+       
+        
+        
+       
+    </body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Estrutura Basica JQuery</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                
+                
+                $("h1").css("display","none");
+                //exibir
+                $("#ocultar").click(function(){
+                    $("h1").fadeOut("slow");
+                });
+                
+                 $("#exibir").click(function(){
+                    $("h1").fadeIn("slow");
+                });
+              
+            });
+        
+            /* 1- default dura 0,4s
+               2 - slow 0,6
+               3- valor em milissegundo
+                
+            
+            */
+        </script>
+    
+    </head>
+    <body>
+        <button id ="exibir">exibir</button>
+        <button id="ocultar">ocultar</button><br/>
+        <hr>
+        <h1>Carlos Eduardo</h1>
+        
+        
+        
+       
+    </body>
+
+</html>

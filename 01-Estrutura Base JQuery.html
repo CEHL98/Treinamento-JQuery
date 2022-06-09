@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Estrutura Basica JQuery</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            
+            //Só quando o documento estiver carregado ele deve fazer alguma coisa
+            $(document).ready(function(){
+                var campo = $("input").val();
+                var titulo =$("#titulo").html();
+                var subtitulo =$(".subtitulo").html();
+                
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+        <input type="text" value ="Campo nome">
+        <h1 id="titulo"> titulo h1</h1>
+        <h2 class="subtitulo">h2</h2>
+    
+    </body>
+
+</html>
